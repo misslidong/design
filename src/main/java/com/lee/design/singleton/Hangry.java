@@ -1,4 +1,4 @@
-package com.lee.design;
+package com.lee.design.singleton;
 
 /**
  * 饿汉式
@@ -12,11 +12,4 @@ public class Hangry {
     private Hangry(){};
 
     public static Hangry getInstance() {return INSTANCE;}
-
-    public static void main(String[] args) {
-        Hangry h1 = Hangry.getInstance();
-        Hangry h2 = Hangry.getInstance();
-
-        System.out.println(h1 == h2);
-    }
 }
